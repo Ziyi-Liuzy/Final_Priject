@@ -40,12 +40,16 @@ https://github.com/TheGreatAthlon/music-generator?tab=readme-ov-file
 The text analysis module dataset mainly consists of text messages and conversations, which are merged from dailydialog, isear, and emotion-stimulus. The dataset maps sentences to emotions one by one, and contains a total of 5 emotion labels: joy, sadness, anger, fear, and neutral.
 
 Dailydialog: http://yanran.li/dailydialog.html
+
 Emotion-stimulus: http://www.site.uottawa.ca/~diana/resources/emotion_stimulus_data
+
 Isear: http://www.affective-sciences.org/index.php/download_file/view/395/296/
 
 ### embeddings/wiki-news-300d-1M.vec
 
 Word embedding uses 300 dimentional w2v pre-trained on Wikipedia articles, which contains word vectors of one million words pre-trained by the FastText model. It reflects the position of words in a specific emotional or semantic space, and establishes semantic relationships between emotional words (such as "anger" and "sadness") and specific words in a sentence, which can help the model better understand the emotional connotation of a sentence.
+
+Need to download from the link and put it in the embeddings folder
 
 https://fasttext.cc/docs/en/english-vectors.html
 
