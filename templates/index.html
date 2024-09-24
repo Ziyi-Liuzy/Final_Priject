@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text to Music Converter</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script type='text/javascript' src='//www.midijs.net/lib/midi.js'></script>
+</head>
+<body>
+    <h1>Text to Music Converter 🎵</h1>
+    <form id="textForm">
+        <textarea id="textInput" placeholder="Enter your text here" style="height: 150px; resize: none;" required></textarea> 
+        <button type="submit">Convert</button>
+    </form>
+    <div id="result" style="display: none;">
+        <p>Extracted Keywords: <span id="keywords"></span></p>
+        <p>Emotion: <span id="emotion"></span></p>
+        <a id="playMIDI" href="#" onClick="MIDIjs.play('static/midi/output_music.mid');">
+            <img src="static/play_icon.png" alt="Play Icon" style="width:32px; height:32px;">
+        </a>
+
+        <a id="midiLink" href="#" target="_blank">Download MIDI</a>
+    
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
